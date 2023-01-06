@@ -1,2 +1,4 @@
-dp = [[0]*10 for _ in range(10)]
-print(dp)
+a = [15, 19, 97]
+
+a.pop(15)
+print(a)
