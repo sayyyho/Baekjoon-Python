@@ -1,4 +1,5 @@
-a = [15, 19, 97]
+base = [1,1,2,2,2,8]
+data = list(map(int, input().split()))
 
-a.pop(15)
-print(a)
+for i in range(6):
+    print(base[i]-data[i],end =" ")
