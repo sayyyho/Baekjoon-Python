@@ -13,21 +13,32 @@ for _ in range(network):
     datas[c1].append(c2)
     datas[c2].append(c1)
 
-def bfs():
-    result = 0
-    path = deque()
-    now = 1 
-    path.append(now)
-    check[now] = True
-    while path:
-        now = path[0]
-        for data in datas[now]:
-            if not check[data]: 
-                path.append(data)
-                check[data] = True
-        path.popleft()
-        result+=1
-    return result
+# def bfs():
+#     result = 0
+#     path = deque()
+#     now = 1 
+#     path.append(now)
+#     check[now] = True
+#     while path:
+#         now = path[0]
+#         for data in datas[now]:
+#             if not check[data]: 
+#                 path.append(data)
+#                 check[data] = True
+#         path.popleft()
+#         result+=1
+#     return result
 
-result = bfs()
-print(result - 1)
+cnt = 0
+
+def dfs(now):
+    global cnt
+    cnt+=1
+    check[now] = True
+    for data in datas[now]:
+        if not check[data]:
+            dfs(data)  
+    return cnt
+
+# print(bfs() - 1)
+print(dfs(1) - 1)
