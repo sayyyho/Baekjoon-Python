@@ -9,4 +9,3 @@ for _ in range(n):
         if cnt < 0: break
     if cnt == 0: print('YES')
     else: print("NO")
-
