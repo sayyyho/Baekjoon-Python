@@ -21,4 +21,3 @@ def binary_search(low, high):
         return binary_search(low, mid-1) #1 작은경우 high값을 내리고
 
 binary_search(1, max(datas))
-# print(802//201, 743//201, 457//201, 539//201)
