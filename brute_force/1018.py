@@ -7,9 +7,6 @@ col_trial = m - 7 # 기본 8이면 1번 check 가능
 row_check = 0
 
 
-# 규칙 : start color : b -> 짝 줄에 짝 | 홀 줄에 홀 || w -> 짝 줄에 홀 | 홀 줄에 짝 아니면 count++
-
-
 #brute_force 구현부
 
 while(row_trial > row_check):
