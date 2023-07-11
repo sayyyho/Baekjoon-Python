@@ -1,6 +1,5 @@
 n = int(input())
-# 현재 줄의 오르막수
-dp = [[1 for _ in range(10)] for _ in range(n+1)]
+dp = [[1 for _ in range(10)] for _ in range(n+1)] # 오르막수
 
 for i in range(2,n+1):
     for j in range(9,0,-1):

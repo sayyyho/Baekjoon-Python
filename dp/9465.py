@@ -16,3 +16,4 @@ for _ in range(test_case):
             dp[0][i] = data[0][i] + max(dp[1][i-1], dp[1][i-2]) 
             dp[1][i] = data[1][i] + max(dp[0][i-1], dp[0][i-2])
         print(max(dp[0][-1], dp[1][-1]))
+# 아이디어는 맞지만, 구현 참고
